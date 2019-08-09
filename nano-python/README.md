@@ -30,8 +30,8 @@ Requirements:
 
 	Create pip.ini file with below contents in C:\IM-docker\Python\Python36
 		
-		```
+		
         [global]
 		cert = C:\certs\ca-bundle.pem
-        ```
+        
     
