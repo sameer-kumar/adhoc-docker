@@ -1,9 +1,3 @@
-# https://blogs.technet.microsoft.com/nanoserver/2016/05/17/python-django-on-nano-server/
-# https://hub.docker.com/_/microsoft-windows-servercore
-# https://github.com/StefanScherer/dockerfiles-windows/tree/master/python
-# https://docs.microsoft.com/en-us/virtualization/windowscontainers/manage-docker/optimize-windows-dockerfile
-# https://www.python.org/downloads/release/python-368/
-
 # escape=`
 
 # Indicates that the nanoserver image will be used as the base image
@@ -37,14 +31,7 @@ COPY ./certs c:/certs
 # Copies the PIP configuration to use Trusted Root CA from local user store
 ENV PIP_CONFIG_FILE c:/Python/Python36/pip.ini
 
-# Uses PowerShell to set the env path and install get-pip.py
-# RUN powershell.exe -Command \
-#  $Env:Path += �;c:/Python� ; \
-#  SETX PATH $Env:Path /M ; \
-#  python C:\python\Scripts\get-pip.py
-
 USER ContainerUser
-# RUN cd
 WORKDIR C:\\_workingDir
 
 # Sets a command or process that will run each time a container is run from the new image.
