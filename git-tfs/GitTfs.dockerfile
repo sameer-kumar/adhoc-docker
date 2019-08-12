@@ -2,6 +2,7 @@
 # https://github.com/chocolatey/choco/issues/1371
 # https://chocolatey.org/docs/installation#completely-offline-install
 # FROM mcr.microsoft.com/windows/servercore:ltsc2019
+# https://stackoverflow.com/questions/33915987/git-tf-unable-to-find-required-jar
 
 FROM mcr.microsoft.com/windows/servercore:1903
 
